@@ -16,14 +16,16 @@ const ingredients = [
   'Condiments',
 ];
 
+const list = document.querySelector('ul#ingredients');
 for (let ingredient of ingredients) {
   
   const itemEL = document.createElement('li');
   itemEL.classList.add("item");
   itemEL.textContent = ingredient;
-  const list = document.querySelector('ul#ingredients');
-  list.appendChild(itemEL)
+  list.appendChild(itemEL);
 };
+ 
+
 
 
 
