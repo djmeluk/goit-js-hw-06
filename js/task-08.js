@@ -12,7 +12,12 @@ function handleSubmit(event) {
   if (email.value === "" || password.value === "") {
     return alert ("Please fill in all the fields!");
   }
+  const objValue = {
+    email: email.value ,
+    password: password.value
+}
+  console.log(objValue);
 
-  console.log(`Login: ${email.value}, Password: ${password.value}`);
+
   event.currentTarget.reset();
 }
